@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 imageUri = Uri.fromFile(outputImage);
                 Intent intent = new Intent("android.intent.action.GET_CONTENT");
                 intent.setType("image/*");
-                intent.putExtra("crop", true);
+                intent.putExtra("crop", true);  //Something not right here
                 intent.putExtra("scale", true);
                 intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
                 startActivityForResult(intent, CROP_PHOTO);
